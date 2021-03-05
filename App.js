@@ -1,31 +1,4 @@
-//import 'react-native-gesture-handler'
-////import { StatusBar } from 'expo-status-bar'
-//import React, { Component } from 'react'
-//import { NavigationContainer } from '@react-navigation/native'
-//import { createStackNavigator } from '@react-navigation/stack'
-//import Login from './screens/login'
-//import Home from './screens/home'
-//import Sign from './screens/sign'
-//import Test from './screens/test'
-//const Stack = createStackNavigator()
-//
-//
-//class App extends Component  {
-//render () {
-//  return (
-//    <NavigationContainer>
-//        <Stack.Navigator>
-//            <Stack.Screen name="Test" component={Test} />
-//            //<Stack.Screen name="Login" component={Login} />
-//            //<Stack.Screen name="Sign" component={Sign} />
-//            //<Stack.Screen name="Home" component={Home} />
-//         </Stack.Navigator>
-//
-//    </NavigationContainer>
-//  );
-//  }
-//  }
-//export default App
+
 import 'react-native-gesture-handler';
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
@@ -41,24 +14,75 @@ const Stack = createStackNavigator(); // -Creates a stack variable for navigatin
 
 
 class App extends Component {
- render(){
+    constructor(props){
+        super(props);
 
+        this.state = {          //setting up state so that we have somewhere to store the data
+            isLoading: true,
+            userData: [],
+            first_name: '',
+            last_name: '',
+            email: '',
+            password: ''
+        }
+        }
+        componentDidMount(){    //call the getData function
+        this.getData();
+        }
 
+        getData(){              //retrieve the data and store it in the state object
+            return fetch("http://10.0.2.2:3333/list")    //returns a promise, 10.0.2.2 because using emulator, instead send request to host machine
+            .then((response) => response.json())    //convert it into json
+            .then((responseJson) => {
+            this.setState({
+                isLoading:false,    //no need to render loading
+                userData: responseJson  //storing the json in the state to later rendering
+            })
+          })
 
-   return (
-     <NavigationContainer>
-      <Stack.Navigator>
-           <Stack.Screen name= "Log In" component={Login} />
-           <Stack.Screen name="Home" component={Home} />
-           <Stack.Screen name="Sign Up" component={Signup} />
+          .catch((error) => {       //error handling, logging out for now
+            console.log(error);
+          });
+        }
 
+        addItem(){
+        let to_send = {
+        first_name: this.state.first_name,
+        last_name: this.state.last_name,
+        email: this.state.email,
+        password: this.state.password,
+        };
 
-      </Stack.Navigator>
+        return fetch("http://localhost:3333/user",{
+        method: 'post',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(to_send)
+        })
+        .then((response) => {
+        Alert.alert("Item added");
+        this.getData();
+        })
+        .catch((error) => {
+        console.log(error);
+        })
+        }
 
-     </NavigationContainer>
-   );
- }
-}
+        render(){
+
+           return (
+             <NavigationContainer>
+              <Stack.Navigator>
+                   <Stack.Screen name= "Log In" component={Login} />
+                   <Stack.Screen name="Home" component={Home} />
+                   <Stack.Screen name="Sign Up" component={Signup} />
+              </Stack.Navigator>
+
+             </NavigationContainer>
+           );
+         }
+        }
 
 export default App
 

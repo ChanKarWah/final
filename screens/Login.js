@@ -77,7 +77,7 @@ class Login extends Component{
         <Text style={write.title}> CoffiDa </Text>
                 <View style={styles.boxSpacing}>
                     <TextInput
-                    placeholder="Username"
+                    placeholder="Email"
                     style={styles.txtBox}
                      />
                  </View>

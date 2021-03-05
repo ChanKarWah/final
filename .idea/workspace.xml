@@ -7,15 +7,20 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d6bad3-7f34-4afe-b899-ab5ebcbebcef" name="Default Changelist" comment="Initial Commit">
+    <list default="true" id="03d6bad3-7f34-4afe-b899-ab5ebcbebcef" name="Default Changelist" comment="Navigation Commit No Network">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/sign.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/sign.js" afterDir="false" />
     </list>
     <list id="4d81ac23-1bf9-4328-8608-eda9c50ccecd" name="Initial Commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coffeee" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -74,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613873559175</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Navigation Commit No Network">
+      <created>1613953779031</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613953779031</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -94,7 +106,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Navigation Commit No Network" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation Commit No Network" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1078" y="389" key="#Notifications" timestamp="1613872857460">
@@ -105,14 +118,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="389" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613765641187" />
-    <state x="454" y="284" width="1200" height="745" key="AVDManager" timestamp="1613951829690">
+    <state x="410" y="129" width="1200" height="745" key="AVDManager" timestamp="1614963169903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="454" y="284" width="1200" height="745" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613951829690" />
-    <state x="912" y="262" key="FileChooserDialogImpl" timestamp="1613951329431">
+    <state x="410" y="129" width="1200" height="745" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614963169903" />
+    <state x="912" y="262" key="FileChooserDialogImpl" timestamp="1614963894625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="912" y="262" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613951329431" />
+    <state x="912" y="262" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614963894625" />
     <state x="2832" y="262" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613939090220" />
     <state x="1071" y="424" key="Github.ShareDialog" timestamp="1613873501346">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -130,9 +143,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="885" y="436" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613873602800" />
-    <state x="785" y="259" key="Vcs.Push.Dialog.v2" timestamp="1613873103239">
+    <state x="785" y="259" key="Vcs.Push.Dialog.v2" timestamp="1614963956399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613873103239" />
+    <state x="785" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614963956399" />
   </component>
 </project>
