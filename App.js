@@ -1,4 +1,3 @@
-
 import 'react-native-gesture-handler';
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
