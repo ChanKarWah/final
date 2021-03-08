@@ -6,6 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/home'
 import Signup from './screens/sign'
 import Login from './screens/login'
+
+
 //import Map from './screens/map'
 //import Menu from './screens/menu'
 
@@ -30,7 +32,7 @@ class App extends Component {
         }
 
         getData(){              //retrieve the data and store it in the state object
-            return fetch("http://10.0.2.2:3333/list")    //returns a promise, 10.0.2.2 because using emulator, instead send request to host machine
+            return fetch("http://10.0.2.2:3333/user")    //returns a promise, 10.0.2.2 because using emulator, instead send request to host machine
             .then((response) => response.json())    //convert it into json
             .then((responseJson) => {
             this.setState({
@@ -73,9 +75,9 @@ class App extends Component {
            return (
              <NavigationContainer>
               <Stack.Navigator>
-                   <Stack.Screen name= "Log In" component={Login} />
-                   <Stack.Screen name="Home" component={Home} />
-                   <Stack.Screen name="Sign Up" component={Signup} />
+                   <Stack.Screen name= "Log In" component={Login} options={{ headerShown: false }}/>
+                   <Stack.Screen name="Home" component={Home} options={{ headerShown: false }}/>
+                   <Stack.Screen name="Sign Up" component={Signup} options={{ headerShown: false }} />
               </Stack.Navigator>
 
              </NavigationContainer>
@@ -84,4 +86,3 @@ class App extends Component {
         }
 
 export default App
-

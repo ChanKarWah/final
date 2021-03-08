@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Alert, TouchableOpacity  } from 'react-native';
 
 
 class Sign extends Component{
@@ -17,10 +17,17 @@ constructor(props){
         }
   render(){
 
+    const AppButton = ({ onPress, title }) => (
+    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
+    <Text style={styles.buttonTxt}>{title}</Text>
+    </TouchableOpacity>
+    );
+
     const navigation = this.props.navigation;
 
     return(
-        <View>
+        <View style={styles.container}>
+        <Text style={write.title}> CoffiDa </Text>
           <View style={styles.boxSpacing}>
             <TextInput
             placeholder="First Name"
@@ -54,7 +61,7 @@ constructor(props){
              />
           </View>
           <View style={styles.boxSpacing}>
-              <Button title="Sign up" onPress={() => this.addItem()}
+              <AppButton title="Register" onPress={() => this.addItem()}
                />
            </View>
 
@@ -103,19 +110,50 @@ constructor(props){
           }
 }
 const styles = StyleSheet.create({
-         txtBox: {
-                  borderColor:'black', borderWidth:1, padding:8
-                 }
-         ,boxSpacing: {
-                     padding:8
-                      }
+  txtBox: {
+    elevation: 8,
+       borderColor:'#123C69',
+        borderWidth:3,
+         padding:8,
+          backgroundColor: "white",
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
+          borderBottomLeftRadius: 10,
+          borderBottomRightRadius: 10,
+          fontWeight: "bold",
+  },
+         boxSpacing: {
+                     padding:10
+                   },
+                   container: {
+                       flex: 1,
+                       backgroundColor: "#EDC7B7",
+                     },
+                     buttonTxt: {
+                       fontSize: 18,
+                       color: "#123C69",
+                       fontWeight: "bold",
+                       alignSelf: "center"
+
+                     },
+                     appButtonContainer: {
+                       elevation: 8,
+                       borderColor:"#123C69",
+                       borderWidth:3,
+         backgroundColor: "#EEE2DC",
+         borderRadius: 10,
+         paddingVertical: 10,
+         paddingHorizontal: 12
+       },
 
        });
-  const write = StyleSheet.create({
-    title :{
-      textAlign: "center",
-      fontSize: 25,
-      padding:20}
-    });
+       const write = StyleSheet.create({
+         title :{
+           textAlign: "center",
+           fontSize: 45,
+           color: '#AC3B61',
+           fontWeight: "bold",
+           padding:20}
+         });
 
 export default Sign;

@@ -15,9 +15,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d6bad3-7f34-4afe-b899-ab5ebcbebcef" name="Default Changelist" comment="Navigation Commit Sign Up">
+    <list default="true" id="03d6bad3-7f34-4afe-b899-ab5ebcbebcef" name="Default Changelist" comment="Navigation Commit Home Started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/sign.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/sign.js" afterDir="false" />
     </list>
@@ -92,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614963980964</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Navigation Commit Home Started">
+      <created>1614995975583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614995975583</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -114,7 +122,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Navigation Commit No Network" />
     <MESSAGE value="Navigation Commit Sign Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigation Commit Sign Up" />
+    <MESSAGE value="Navigation Commit Home Started" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation Commit Home Started" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1078" y="389" key="#Notifications" timestamp="1613872857460">
@@ -125,10 +134,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="389" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613765641187" />
-    <state x="376" y="206" width="1200" height="702" key="AVDManager" timestamp="1614993843330">
+    <state x="463" y="196" width="1200" height="702" key="AVDManager" timestamp="1615069298936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="376" y="206" width="1200" height="702" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614993843330" />
+    <state x="463" y="196" width="1200" height="702" key="AVDManager/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615069298936" />
     <state x="912" y="262" key="FileChooserDialogImpl" timestamp="1614963894625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -150,9 +159,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="885" y="436" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613873602800" />
-    <state x="785" y="259" key="Vcs.Push.Dialog.v2" timestamp="1614970330538">
+    <state x="785" y="259" key="Vcs.Push.Dialog.v2" timestamp="1614995989878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614970330538" />
+    <state x="785" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614995989878" />
   </component>
 </project>
